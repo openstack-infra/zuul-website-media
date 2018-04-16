@@ -1,7 +1,10 @@
 - project:
     check:
       jobs:
-        - noop
+        - zuul-website-build
     gate:
       jobs:
-        - noop
+        - zuul-website-build
+    post:
+      jobs:
+        - zuul-website-publish
