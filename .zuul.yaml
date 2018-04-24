@@ -3,6 +3,7 @@
       jobs:
         - zuul-website-build
     gate:
+      queue: zuul-website
       jobs:
         - zuul-website-build
     post:
